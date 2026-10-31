@@ -26,7 +26,7 @@ its own API. Validation runs in two stages, because a schema can't express every
    that were never declared, ordering of history entries).
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Text input] --> B[Extraction service]
     B --> C{{StructuredOutputProvider}}
     C --> C1[ClaudeProvider<br/>native structured outputs]
